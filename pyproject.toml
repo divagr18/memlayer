@@ -1,0 +1,12 @@
+[project]
+name = "memory-bank"
+version = "0.1.0"
+description = "Add persistent, intelligent memory to any LLM in minutes."
+authors = [{ name = "Divyansh Agrawal", email = "keshav.r.1925@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic",
+    "openai>=1.12.0",
+    "numpy",
+    "chromadb>=0.4.22", # <-- The new, reliable dependency
+]
