@@ -8,5 +8,14 @@ dependencies = [
     "pydantic",
     "openai>=1.12.0",
     "numpy",
-    "chromadb>=0.4.22", # <-- The new, reliable dependency
+    "requests",
+    "chromadb>=0.4.22",
+    "gqlalchemy[memgraph]>=1.5.0",
+    "sentence-transformers",
+    "networkx>=3.1",
+    "anthropic>=0.72.1",
+    "google-genai>=1.50.0",
+    "python-dateutil"
+
+
 ]

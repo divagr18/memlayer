@@ -32,6 +32,26 @@ build/
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Memory Bank / Database files
+# ChromaDB files
+chroma/
+*.sqlite3
+chroma.sqlite3
+*.bin
+*.parquet
+
+# NetworkX storage files
+memgraph/
+*.pkl
+*.pickle
+*.gpickle
+
+# Memory storage directories
+*_memories/
+memory_bank_data/
+my_chatbot_memories/
+test_kg_memory/
+
 # Node / React
 node_modules/
 dist/
