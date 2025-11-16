@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "memlayer"
-version = "0.1.0"
+version = "0.1.1"
 description = "The memory layer for LLMs - add persistent, intelligent memory to any LLM in minutes."
 readme = "README.md"
 authors = [{ name = "Divyansh Agrawal", email = "keshav.r.1925@gmail.com" }]

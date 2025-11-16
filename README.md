@@ -7,35 +7,32 @@ MemLayer transforms stateless LLMs into memory-enabled AI assistants that rememb
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-##  Contents
+## Contents
 
-| Section | Quick link |
-|---|---|
-| Features | [Features](#-features) |
-| Quick Start | [Quick Start](#-quick-start) |
-| Key Concepts | [Key Concepts](#-key-concepts) |
-| Architecture | [Architecture](#-architecture) |
-| Memory Modes | [Memory Modes](#-memory-modes) |
-| Search Tiers | [Search Tiers](#-search-tiers) |
-| Providers | [Providers](#-providers) |
-| Advanced Features | [Advanced Features](#-advanced-features) |
-| Examples | [Examples](#-examples) |
-| Performance | [Performance](#-performance) |
-| Documentation | [Documentation](#-documentation) |
-| Contributing | [Contributing](#-contributing) |
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Key Concepts](#key-concepts)
+- [Memory Modes](#memory-modes)
+- [Search Tiers](#search-tiers)
+- [Providers](#providers)
+- [Advanced Features](#advanced-features)
+- [Examples](#examples)
+- [Performance](#performance)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
 
 ##  Features
 
-- ** Universal LLM Support**: Works with OpenAI, Claude, Gemini, Ollama models
-- ** Plug-and-play**: Install with `pip install memlayer` and get started in minutes — minimal setup required.
-- ** Intelligent Memory Filtering**: Three operation modes (LOCAL/ONLINE/LIGHTWEIGHT) automatically filter important information
-- ** Hybrid Search**: Combines vector similarity + knowledge graph traversal for accurate retrieval
-- ** Three Search Tiers**: Fast (<100ms), Balanced (<500ms), Deep (<2s) optimized for different use cases
-- ** Knowledge Graph**: Automatically extracts entities, relationships, and facts from conversations
-- ** Proactive Reminders**: Schedule tasks and get automatic reminders when they're due
-- ** Built-in Observability**: Trace every search operation with detailed performance metrics
-- ** Flexible Storage**: ChromaDB (vector) + NetworkX (graph) or graph-only mode
-- ** Production Ready**: Serverless-friendly with fast cold starts using online mode
+- **Universal LLM Support**: Works with OpenAI, Claude, Gemini, Ollama models
+- **Plug-and-play**: Install with `pip install memlayer` and get started in minutes — minimal setup required.
+- **Intelligent Memory Filtering**: Three operation modes (LOCAL/ONLINE/LIGHTWEIGHT) automatically filter important information
+- **Hybrid Search**: Combines vector similarity + knowledge graph traversal for accurate retrieval
+- **Three Search Tiers**: Fast (<100ms), Balanced (<500ms), Deep (<2s) optimized for different use cases
+- **Knowledge Graph**: Automatically extracts entities, relationships, and facts from conversations
+- **Proactive Reminders**: Schedule tasks and get automatic reminders when they're due
+- **Built-in Observability**: Trace every search operation with detailed performance metrics
+- **Flexible Storage**: ChromaDB (vector) + NetworkX (graph) or graph-only mode
+- **Production Ready**: Serverless-friendly with fast cold starts using online mode
 
 ##  Quick Start
 
