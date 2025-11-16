@@ -45,12 +45,19 @@ memgraph/
 *.pkl
 *.pickle
 *.gpickle
-
-# Memory storage directories
+test_env/
+# Memory storage directories (test artifacts)
 *_memories/
+*_memory/
 memory_bank_data/
 my_chatbot_memories/
 test_kg_memory/
+test_kg_memory_nx/
+cache_test_*/
+test_salience_*/
+*_tier_memory/
+proactive_test_memory/
+profile_test_memory/
 
 # Node / React
 node_modules/

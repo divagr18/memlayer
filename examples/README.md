@@ -1,95 +1,213 @@
-# Memory Bank Examples
+# MemLayer Examples
 
-This directory contains example scripts demonstrating the capabilities of Memory Bank.
+Welcome to the MemLayer examples! This directory contains comprehensive examples organized by topic.
 
-## 🚀 Getting Started
+## 📁 Structure
 
-All examples require an OpenAI API key (or equivalent for other providers):
-
-```bash
-export OPENAI_API_KEY='your-api-key-here'
+```
+examples/
+├── 01_basics/           # Getting started with MemLayer
+├── 02_search_tiers/     # Fast, Balanced, and Deep search modes
+├── 03_features/         # Advanced features (tasks, knowledge graph)
+├── 04_benchmarks/       # Performance comparisons
+├── 05_providers/        # Provider-specific examples (OpenAI, Claude, etc.)
+└── README.md            # This file
 ```
 
-## 📚 Available Examples
+## 🚀 Quick Start
 
-### Search Tier Examples
-
-Memory Bank provides three search tiers optimized for different use cases:
-
-#### 1. **Fast Tier** (`fast_tier_example.py`)
+### 1. Install MemLayer
 ```bash
-python examples/fast_tier_example.py
-```
-- **Purpose**: Quick lookups with minimal latency
-- **Vector search**: Top 2 results
-- **Graph search**: Disabled
-- **Target latency**: <100ms
-- **Use case**: Real-time chat, simple factual recall
-
-#### 2. **Balanced Tier** (`balanced_tier_example.py`)
-```bash
-python examples/balanced_tier_example.py
-```
-- **Purpose**: Standard search with good accuracy/performance balance
-- **Vector search**: Top 5 results
-- **Graph search**: Disabled
-- **Target latency**: <500ms
-- **Use case**: General conversation, most queries (default)
-
-#### 3. **Deep Tier** (`deep_tier_example.py`)
-```bash
-python examples/deep_tier_example.py
-```
-- **Purpose**: Comprehensive search with knowledge graph reasoning
-- **Vector search**: Top 10 results
-- **Graph search**: Enabled (entity extraction + graph traversal)
-- **Target latency**: <2s
-- **Use case**: Complex queries, relationship discovery, multi-hop reasoning
-
-#### 4. **Complete Demo** (`search_tiers_demo.py`)
-```bash
-python examples/search_tiers_demo.py
-```
-Comprehensive demonstration showing all three tiers in action with side-by-side comparisons.
-
-#### 5. **Visual Comparison** (`tier_comparison.py`)
-```bash
-python examples/tier_comparison.py
-```
-Side-by-side visual comparison showing performance metrics, results quality, and insights for all three tiers answering the same query.
-
-### Knowledge Graph Examples
-
-#### `test_knowledge_graph.py`
-Demonstrates the knowledge graph consolidation pipeline:
-- Extracts entities and relationships from conversations
-- Stores facts in vector database
-- Builds knowledge graph with NetworkX
-- Shows retrieved data and structure
-
-```bash
-python examples/test_knowledge_graph.py
+pip install memlayer
 ```
 
-#### `basic_openai_chat.py`
-Simple example of using the OpenAI wrapper with memory capabilities:
-- Basic conversation with memory storage
+### 2. Set your API key
+```bash
+# For OpenAI
+export OPENAI_API_KEY='sk-...'
+
+# For Claude
+export ANTHROPIC_API_KEY='sk-ant-...'
+
+# For Gemini
+export GOOGLE_API_KEY='...'
+
+# For Ollama (local, no key needed)
+ollama pull qwen3:1.7b
+```
+
+### 3. Run your first example
+```bash
+python examples/01_basics/getting_started.py
+```
+
+## 📚 Examples by Category
+
+### 🎓 Basics (01_basics/)
+Start here if you're new to MemLayer!
+
+**`getting_started.py`** - Simple introduction to MemLayer
+- Store and retrieve memories
 - Automatic knowledge consolidation
-- Memory retrieval demonstration
+- Basic conversation patterns
 
 ```bash
-python examples/basic_openai_chat.py
+python examples/01_basics/getting_started.py
 ```
 
-## 🎯 Quick Start Guide
+---
 
-### 1. Simple Usage
+### 🔍 Search Tiers (02_search_tiers/)
+Learn about the three search modes optimized for different use cases.
+
+MemLayer provides three search tiers optimized for different use cases.
+
+**`fast_tier_example.py`** - Quick lookups (<100ms)
+```bash
+python examples/02_search_tiers/fast_tier_example.py
+```
+- 2 vector search results
+- No graph traversal
+- Real-time chat applications
+
+**`balanced_tier_example.py`** - Standard search (<500ms) [DEFAULT]
+```bash
+python examples/02_search_tiers/balanced_tier_example.py
+```
+- 5 vector search results
+- No graph traversal
+- General conversation
+
+**`deep_tier_example.py`** - Comprehensive search (<2s)
+```bash
+python examples/02_search_tiers/deep_tier_example.py
+```
+- 10 vector search results
+- Graph traversal enabled
+- Complex queries, relationship discovery
+
+**`search_tiers_demo.py`** - Complete demonstration of all tiers
+```bash
+python examples/02_search_tiers/search_tiers_demo.py
+```
+
+**`tier_comparison.py`** - Side-by-side performance comparison
+```bash
+python examples/02_search_tiers/tier_comparison.py
+```
+
+| Tier | Latency | Results | Graph | Use Case |
+|------|---------|---------|-------|----------|
+| Fast | <100ms | 2 | ❌ | Chatbots, real-time |
+| Balanced | <500ms | 5 | ❌ | General conversation |
+| Deep | <2s | 10 | ✅ | Research, multi-hop reasoning |
+
+---
+
+### ⚡ Features (03_features/)
+Advanced capabilities and integrations.
+
+**`task_reminders.py`** - Proactive task management
+```bash
+python examples/03_features/task_reminders.py
+```
+- Schedule future tasks
+- Automatic reminders when due
+- Natural language date parsing
+
+**`test_knowledge_graph.py`** - Knowledge graph demonstration
+```bash
+python examples/03_features/test_knowledge_graph.py
+```
+- Entity and relationship extraction
+- Graph-based memory storage
+- Visual inspection of knowledge graph
+
+---
+
+### 📊 Benchmarks (04_benchmarks/)
+Performance comparisons and measurements.
+
+**`compare_salience_modes.py`** - Compare memory filtering modes
+```bash
+python examples/04_benchmarks/compare_salience_modes.py
+```
+Compares three salience (memory filtering) modes:
+- **LOCAL**: Sentence-transformers (slow startup, high accuracy)
+- **ONLINE**: OpenAI embeddings API (fast startup, API cost)
+- **LIGHTWEIGHT**: Keyword-based (instant startup, no embeddings)
+
+Results:
+```
+LIGHTWEIGHT: ~5s startup   | No API cost | Graph-only storage
+ONLINE:      ~5s startup   | Small API cost | Full vector + graph
+LOCAL:       ~10s startup  | No API cost | Full vector + graph
+```
+
+---
+
+### 🔌 Providers (05_providers/)
+Provider-specific examples for each supported LLM.
+
+**`openai_example.py`** - OpenAI/GPT integration
+```bash
+export OPENAI_API_KEY='sk-...'
+python examples/05_providers/openai_example.py
+```
+
+**`claude_example.py`** - Anthropic Claude integration
+```bash
+export ANTHROPIC_API_KEY='sk-ant-...'
+python examples/05_providers/claude_example.py
+```
+
+**`gemini_example.py`** - Google Gemini integration
+```bash
+export GOOGLE_API_KEY='...'
+python examples/05_providers/gemini_example.py
+```
+
+**`ollama_example.py`** - Ollama (local) integration
+```bash
+ollama pull qwen3:1.7b
+python examples/05_providers/ollama_example.py
+```
+
+See [05_providers/README.md](05_providers/README.md) for detailed provider comparisons.
+
+---
+
+## 🎯 Use Case Guide
+
+### "I want to build a chatbot with memory"
+→ Start with `01_basics/getting_started.py`
+→ Use default settings (balanced tier, local mode)
+
+### "I need fast responses (<100ms)"
+→ Use `02_search_tiers/fast_tier_example.py`
+→ Set `salience_mode="online"` for fastest startup
+
+### "I want to find relationships between entities"
+→ Use `02_search_tiers/deep_tier_example.py`
+→ Wait 3-5s after conversations for graph consolidation
+
+### "I want proactive reminders"
+→ Use `03_features/task_reminders.py`
+→ Schedule tasks with natural language dates
+
+### "I want to run entirely offline"
+→ Use `05_providers/ollama_example.py`
+→ Set `salience_mode="local"` (no API calls)
+
+### "I need instant cold starts (serverless)"
+→ Use any provider with `salience_mode="online"`
+→ Or use `salience_mode="lightweight"` for graph-only
 ```python
-from memory_bank.wrappers.openai import OpenAI
+from memlayer.wrappers.openai import OpenAI
 
 client = OpenAI(
     api_key="your-key",
-    model="gpt-4o-mini",
+    model="gpt-4.1-mini",
     storage_path="./my_memories",
     user_id="user_123"
 )
@@ -121,19 +239,19 @@ response = client.chat([
 ### 3. Multiple Providers
 ```python
 # OpenAI
-from memory_bank.wrappers.openai import OpenAI
-client = OpenAI(api_key="...", model="gpt-4o-mini")
+from memlayer.wrappers.openai import OpenAI
+client = OpenAI(api_key="...", model="gpt-4.1-mini")
 
 # Claude
-from memory_bank.wrappers.claude import Claude
+from memlayer.wrappers.claude import Claude
 client = Claude(api_key="...", model="claude-3-5-sonnet-20241022")
 
 # Gemini
-from memory_bank.wrappers.gemini import Gemini
+from memlayer.wrappers.gemini import Gemini
 client = Gemini(api_key="...", model="gemini-2.0-flash-exp")
 
 # Ollama (local)
-from memory_bank.wrappers.ollama import Ollama
+from memlayer.wrappers.ollama import Ollama
 client = Ollama(host="http://localhost:11434", model="qwen3:1.7b")
 ```
 

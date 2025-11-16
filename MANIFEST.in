@@ -1,0 +1,29 @@
+# Include documentation and metadata
+include README.md
+include LICENSE
+include .env.example
+include RELEASE_CHECKLIST.md
+
+# Include all documentation
+recursive-include docs *.md
+
+# Include examples
+recursive-include examples *.py
+
+# Exclude unnecessary files
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .DS_Store
+global-exclude *.swp
+global-exclude *.swo
+
+# Exclude build artifacts
+prune build
+prune dist
+prune *.egg-info
+
+# Exclude test and development files
+prune tests
+exclude .gitignore
+exclude docker-compose.yml
+exclude Dockerfile
