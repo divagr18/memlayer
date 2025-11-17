@@ -7,6 +7,10 @@ MemLayer transforms stateless LLMs into memory-enabled AI assistants that rememb
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
+<p align="center">
+  <img src="./memlayer.png" alt="MemLayer Overview" width="600">
+</p>
+
 ## Contents
 
 - [Features](#features)
