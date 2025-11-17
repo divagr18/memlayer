@@ -6,7 +6,7 @@
 
 Memlayer adds persistent, intelligent memory to any LLM, enabling agents that recall context across conversations, extract structured knowledge, and surface relevant information when it matters.
 
-**<100ms Fast Search • Noise-Aware Memory Gate • Multi-Tier Retrieval Modes • 100% Offline Friendly • Zero Config**
+**<100ms Fast Search • Noise-Aware Memory Gate • Multi-Tier Retrieval Modes • 100% Local • Zero Config**
 
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
