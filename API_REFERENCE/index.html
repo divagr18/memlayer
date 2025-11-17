@@ -1,0 +1,2547 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://divagr18.github.io/memlayer/API_REFERENCE/">
+      
+      
+      
+        <link rel="next" href="../basics/quickstart/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>API Reference - Memlayer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#memlayer-api-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Memlayer Documentation" class="md-header__button md-logo" aria-label="Memlayer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Memlayer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Memlayer Documentation" class="md-nav__button md-logo" aria-label="Memlayer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Memlayer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Overview
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client Initialization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provider-specific-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider-Specific Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chat()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update_from_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        update_from_text()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesize_answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        synthesize_answer()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analyze_and_extract_knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        analyze_and_extract_knowledge()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search Service
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        search()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consolidation-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consolidation Service
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consolidation Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consolidate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        consolidate()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Storage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add_task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add_task()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_entity_subgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_entity_subgraph()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-storage-chromadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vector Storage (ChromaDB)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector Storage (ChromaDB)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add_facts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add_facts()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search_facts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        search_facts()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Observability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trace-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trace Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Message Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Schema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Schema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search_memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        search_memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schedule_task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        schedule_task
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memlayerconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MemlayerConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type Hints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/operation_modes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operation Modes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/streaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../providers/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Providers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Providers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../providers/openai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../providers/claude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../providers/gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../providers/ollama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Services
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/consolidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/curation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Storage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/chroma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chroma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/networkx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NetworkX Graph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tuning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tuning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuning/salience_threshold/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Salience Threshold
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuning/intervals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intervals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuning/operation_mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operation Modes (advanced)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client Initialization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provider-specific-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider-Specific Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chat()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update_from_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        update_from_text()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesize_answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        synthesize_answer()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analyze_and_extract_knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        analyze_and_extract_knowledge()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search Service
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        search()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consolidation-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consolidation Service
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consolidation Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consolidate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        consolidate()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Storage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add_task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add_task()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_entity_subgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_entity_subgraph()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-storage-chromadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vector Storage (ChromaDB)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector Storage (ChromaDB)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add_facts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add_facts()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search_facts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        search_facts()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Observability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trace-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trace Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Message Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Schema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Schema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search_memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        search_memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schedule_task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        schedule_task
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memlayerconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MemlayerConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type Hints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="memlayer-api-reference">Memlayer API Reference</h1>
+<p>Complete reference for all public methods and their parameters.</p>
+<hr />
+<h2 id="client-initialization">Client Initialization</h2>
+<p>All wrapper classes (<code>OpenAI</code>, <code>Claude</code>, <code>Gemini</code>, <code>Ollama</code>) share these common initialization parameters:</p>
+<pre><code class="language-python">from memlayer.wrappers.openai import OpenAI
+from memlayer.wrappers.claude import Claude
+from memlayer.wrappers.gemini import Gemini
+from memlayer.wrappers.ollama import Ollama
+</code></pre>
+<h3 id="common-parameters">Common Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>api_key</code></td>
+<td><code>str</code></td>
+<td><code>None</code></td>
+<td>API key (read from env if not provided)</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td><code>str</code></td>
+<td><em>varies</em></td>
+<td>Model name/identifier</td>
+</tr>
+<tr>
+<td><code>user_id</code></td>
+<td><code>str</code></td>
+<td><code>"default_user"</code></td>
+<td>User identifier for memory isolation</td>
+</tr>
+<tr>
+<td><code>operation_mode</code></td>
+<td><code>str</code></td>
+<td><code>"online"</code></td>
+<td><code>"online"</code>, <code>"local"</code>, or <code>"lightweight"</code></td>
+</tr>
+<tr>
+<td><code>chroma_dir</code></td>
+<td><code>str</code></td>
+<td><code>"./chroma_db"</code></td>
+<td>Path to ChromaDB storage directory</td>
+</tr>
+<tr>
+<td><code>networkx_path</code></td>
+<td><code>str</code></td>
+<td><code>"./knowledge_graph.pkl"</code></td>
+<td>Path to NetworkX graph file</td>
+</tr>
+<tr>
+<td><code>salience_threshold</code></td>
+<td><code>float</code></td>
+<td><code>0.5</code></td>
+<td>Threshold for content filtering (0.0-1.0)</td>
+</tr>
+<tr>
+<td><code>embedding_model</code></td>
+<td><code>str</code></td>
+<td><em>varies</em></td>
+<td>Embedding model name</td>
+</tr>
+<tr>
+<td><code>max_search_results</code></td>
+<td><code>int</code></td>
+<td><code>5</code></td>
+<td>Maximum search results to return</td>
+</tr>
+<tr>
+<td><code>search_tier</code></td>
+<td><code>str</code></td>
+<td><code>"balanced"</code></td>
+<td><code>"fast"</code>, <code>"balanced"</code>, or <code>"deep"</code></td>
+</tr>
+<tr>
+<td><code>curation_interval</code></td>
+<td><code>int</code></td>
+<td><code>3600</code></td>
+<td>Curation check interval in seconds</td>
+</tr>
+<tr>
+<td><code>temperature</code></td>
+<td><code>float</code></td>
+<td><code>0.7</code></td>
+<td>LLM temperature</td>
+</tr>
+<tr>
+<td><code>max_tokens</code></td>
+<td><code>int</code></td>
+<td><code>4096</code></td>
+<td>Maximum tokens in response</td>
+</tr>
+</tbody>
+</table>
+<h3 id="provider-specific-parameters">Provider-Specific Parameters</h3>
+<p><strong>OpenAI:</strong></p>
+<pre><code class="language-python">client = OpenAI(
+    api_key=&quot;sk-...&quot;,
+    model=&quot;gpt-4.1-mini&quot;,
+    user_id=&quot;alice&quot;
+)
+</code></pre>
+<p><strong>Claude:</strong></p>
+<pre><code class="language-python">client = Claude(
+    api_key=&quot;sk-ant-...&quot;,
+    model=&quot;claude-4-sonnet&quot;,
+    user_id=&quot;alice&quot;
+)
+</code></pre>
+<p><strong>Gemini:</strong></p>
+<pre><code class="language-python">client = Gemini(
+    api_key=&quot;AIza...&quot;,
+    model=&quot;gemini-2.5-flash&quot;,
+    user_id=&quot;alice&quot;
+)
+</code></pre>
+<p><strong>Ollama:</strong></p>
+<pre><code class="language-python">client = Ollama(
+    model=&quot;llama3.2&quot;,
+    host=&quot;http://localhost:11434&quot;,  # Additional parameter
+    user_id=&quot;alice&quot;,
+    operation_mode=&quot;local&quot;
+)
+</code></pre>
+<hr />
+<h2 id="core-methods">Core Methods</h2>
+<h3 id="chat"><code>chat()</code></h3>
+<p>Send a chat completion request with memory capabilities.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def chat(
+    messages: List[Dict[str, str]],
+    stream: bool = False,
+    **kwargs
+) -&gt; str | Generator[str, None, None]
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>messages</code> | <code>List[Dict[str, str]]</code> | ✅ | List of message dicts with <code>role</code> and <code>content</code> |
+| <code>stream</code> | <code>bool</code> | ❌ | If <code>True</code>, returns generator yielding chunks |
+| <code>**kwargs</code> | <code>Any</code> | ❌ | Additional provider-specific arguments |</p>
+<p><strong>Returns:</strong>
+- If <code>stream=False</code>: <code>str</code> - Complete response text
+- If <code>stream=True</code>: <code>Generator[str, None, None]</code> - Generator yielding response chunks</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python"># Non-streaming
+response = client.chat([
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}
+])
+
+# Streaming
+for chunk in client.chat([
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}
+], stream=True):
+    print(chunk, end=&quot;&quot;, flush=True)
+</code></pre>
+<hr />
+<h3 id="update_from_text"><code>update_from_text()</code></h3>
+<p>Directly ingest text into memory without conversational interaction.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def update_from_text(text_block: str) -&gt; None
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>text_block</code> | <code>str</code> | ✅ | Text content to analyze and store |</p>
+<p><strong>Returns:</strong> <code>None</code> (runs asynchronously in background)</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">client.update_from_text(&quot;&quot;&quot;
+Meeting notes from Nov 15:
+- Q4 deadline: December 20th
+- New team member: Bob
+- Budget increased 15%
+&quot;&quot;&quot;)
+</code></pre>
+<hr />
+<h3 id="synthesize_answer"><code>synthesize_answer()</code></h3>
+<p>Generate a memory-grounded answer to a specific question.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def synthesize_answer(
+    question: str,
+    return_object: bool = False
+) -&gt; str | AnswerObject
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>question</code> | <code>str</code> | ✅ | Question to answer |
+| <code>return_object</code> | <code>bool</code> | ❌ | If <code>True</code>, returns detailed <code>AnswerObject</code> |</p>
+<p><strong>Returns:</strong>
+- If <code>return_object=False</code>: <code>str</code> - Answer text
+- If <code>return_object=True</code>: <code>AnswerObject</code> with fields:
+  - <code>answer: str</code> - The synthesized answer
+  - <code>sources: List[str]</code> - Source facts used
+  - <code>confidence: float</code> - Confidence score (0.0-1.0)</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python"># Simple answer
+answer = client.synthesize_answer(&quot;What is the Q4 deadline?&quot;)
+
+# Detailed answer with sources
+answer_obj = client.synthesize_answer(
+    &quot;What is the Q4 deadline?&quot;,
+    return_object=True
+)
+print(f&quot;Answer: {answer_obj.answer}&quot;)
+print(f&quot;Sources: {answer_obj.sources}&quot;)
+print(f&quot;Confidence: {answer_obj.confidence}&quot;)
+</code></pre>
+<hr />
+<h3 id="analyze_and_extract_knowledge"><code>analyze_and_extract_knowledge()</code></h3>
+<p>Extract structured knowledge from text (internal method, but can be called directly).</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def analyze_and_extract_knowledge(text: str) -&gt; Dict[str, List[Dict]]
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>text</code> | <code>str</code> | ✅ | Text to analyze |</p>
+<p><strong>Returns:</strong> <code>Dict</code> with keys:
+- <code>facts</code>: <code>List[Dict]</code> - Extracted facts with <code>fact</code>, <code>importance_score</code>, <code>expiration_date</code>
+- <code>entities</code>: <code>List[Dict]</code> - Entities with <code>name</code> and <code>type</code>
+- <code>relationships</code>: <code>List[Dict]</code> - Relationships with <code>subject</code>, <code>predicate</code>, <code>object</code></p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">knowledge = client.analyze_and_extract_knowledge(
+    &quot;Alice works at TechCorp as a Senior Engineer&quot;
+)
+
+print(knowledge[&quot;facts&quot;])
+# [{&quot;fact&quot;: &quot;Alice works at TechCorp&quot;, &quot;importance_score&quot;: 0.9, ...}]
+
+print(knowledge[&quot;entities&quot;])
+# [{&quot;name&quot;: &quot;Alice&quot;, &quot;type&quot;: &quot;Person&quot;}, {&quot;name&quot;: &quot;TechCorp&quot;, &quot;type&quot;: &quot;Organization&quot;}]
+
+print(knowledge[&quot;relationships&quot;])
+# [{&quot;subject&quot;: &quot;Alice&quot;, &quot;predicate&quot;: &quot;works at&quot;, &quot;object&quot;: &quot;TechCorp&quot;}]
+</code></pre>
+<hr />
+<h2 id="search-service">Search Service</h2>
+<p>Access via <code>client.search_service</code>.</p>
+<h3 id="search"><code>search()</code></h3>
+<p>Search the knowledge graph and vector store.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def search(
+    query: str,
+    user_id: str,
+    search_tier: str = &quot;balanced&quot;,
+    llm_client: Optional[Any] = None
+) -&gt; Dict[str, Any]
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>query</code> | <code>str</code> | ✅ | Search query |
+| <code>user_id</code> | <code>str</code> | ✅ | User ID for memory isolation |
+| <code>search_tier</code> | <code>str</code> | ❌ | <code>"fast"</code>, <code>"balanced"</code>, or <code>"deep"</code> |
+| <code>llm_client</code> | <code>Any</code> | ❌ | LLM client for entity extraction in deep search |</p>
+<p><strong>Returns:</strong> <code>Dict</code> with keys:
+- <code>result</code>: <code>str</code> - Formatted search results
+- <code>trace</code>: <code>Trace</code> - Observability trace object</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">search_output = client.search_service.search(
+    query=&quot;What do I know about Alice?&quot;,
+    user_id=&quot;user123&quot;,
+    search_tier=&quot;deep&quot;,
+    llm_client=client
+)
+
+print(search_output[&quot;result&quot;])
+print(f&quot;Search took: {search_output['trace'].total_time_ms}ms&quot;)
+</code></pre>
+<hr />
+<h2 id="consolidation-service">Consolidation Service</h2>
+<p>Access via <code>client.consolidation_service</code>.</p>
+<h3 id="consolidate"><code>consolidate()</code></h3>
+<p>Extract and store knowledge from text (runs in background thread).</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def consolidate(text: str, user_id: str) -&gt; None
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>text</code> | <code>str</code> | ✅ | Text to consolidate |
+| <code>user_id</code> | <code>str</code> | ✅ | User ID for memory isolation |</p>
+<p><strong>Returns:</strong> <code>None</code> (runs asynchronously)</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">client.consolidation_service.consolidate(
+    &quot;Alice mentioned the project deadline is next Friday&quot;,
+    user_id=&quot;user123&quot;
+)
+</code></pre>
+<hr />
+<h2 id="graph-storage">Graph Storage</h2>
+<p>Access via <code>client.graph_storage</code>.</p>
+<h3 id="add_task"><code>add_task()</code></h3>
+<p>Schedule a task with a due date.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def add_task(
+    description: str,
+    due_timestamp: float,
+    user_id: str
+) -&gt; str
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>description</code> | <code>str</code> | ✅ | Task description |
+| <code>due_timestamp</code> | <code>float</code> | ✅ | Unix timestamp when task is due |
+| <code>user_id</code> | <code>str</code> | ✅ | User ID for task ownership |</p>
+<p><strong>Returns:</strong> <code>str</code> - Task ID</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">from datetime import datetime, timedelta
+
+due_time = (datetime.now() + timedelta(days=7)).timestamp()
+task_id = client.graph_storage.add_task(
+    description=&quot;Review project proposal&quot;,
+    due_timestamp=due_time,
+    user_id=&quot;alice&quot;
+)
+</code></pre>
+<h3 id="get_entity_subgraph"><code>get_entity_subgraph()</code></h3>
+<p>Get entity and its relationships from the graph.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def get_entity_subgraph(
+    entity_name: str,
+    user_id: str,
+    max_depth: int = 2
+) -&gt; Dict[str, Any]
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>entity_name</code> | <code>str</code> | ✅ | Entity name to query |
+| <code>user_id</code> | <code>str</code> | ✅ | User ID for isolation |
+| <code>max_depth</code> | <code>int</code> | ❌ | Maximum traversal depth |</p>
+<p><strong>Returns:</strong> <code>Dict</code> with entity data and relationships</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">subgraph = client.graph_storage.get_entity_subgraph(
+    entity_name=&quot;Alice&quot;,
+    user_id=&quot;user123&quot;,
+    max_depth=2
+)
+</code></pre>
+<hr />
+<h2 id="vector-storage-chromadb">Vector Storage (ChromaDB)</h2>
+<p>Access via <code>client.chroma_storage</code>.</p>
+<h3 id="add_facts"><code>add_facts()</code></h3>
+<p>Add facts to vector store with embeddings.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def add_facts(
+    facts: List[str],
+    metadata_list: List[Dict],
+    user_id: str
+) -&gt; None
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>facts</code> | <code>List[str]</code> | ✅ | List of fact strings |
+| <code>metadata_list</code> | <code>List[Dict]</code> | ✅ | Metadata for each fact |
+| <code>user_id</code> | <code>str</code> | ✅ | User ID for isolation |</p>
+<p><strong>Returns:</strong> <code>None</code></p>
+<h3 id="search_facts"><code>search_facts()</code></h3>
+<p>Search for similar facts using vector similarity.</p>
+<p><strong>Signature:</strong></p>
+<pre><code class="language-python">def search_facts(
+    query: str,
+    user_id: str,
+    n_results: int = 5
+) -&gt; Dict[str, Any]
+</code></pre>
+<p><strong>Parameters:</strong>
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| <code>query</code> | <code>str</code> | ✅ | Search query |
+| <code>user_id</code> | <code>str</code> | ✅ | User ID for isolation |
+| <code>n_results</code> | <code>int</code> | ❌ | Maximum results to return |</p>
+<p><strong>Returns:</strong> <code>Dict</code> with search results</p>
+<hr />
+<h2 id="observability">Observability</h2>
+<h3 id="trace-object">Trace Object</h3>
+<p>Returned by search operations for performance monitoring.</p>
+<p><strong>Attributes:</strong>
+- <code>total_time_ms</code>: <code>float</code> - Total search time in milliseconds
+- <code>vector_search_time_ms</code>: <code>float</code> - Time spent in vector search
+- <code>graph_traversal_time_ms</code>: <code>float</code> - Time spent in graph traversal
+- <code>entity_extraction_time_ms</code>: <code>float</code> - Time spent extracting entities
+- <code>search_tier</code>: <code>str</code> - Search tier used
+- <code>results_count</code>: <code>int</code> - Number of results returned</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">output = client.search_service.search(query=&quot;...&quot;, user_id=&quot;...&quot;)
+trace = output[&quot;trace&quot;]
+
+print(f&quot;Total: {trace.total_time_ms}ms&quot;)
+print(f&quot;Vector search: {trace.vector_search_time_ms}ms&quot;)
+print(f&quot;Graph traversal: {trace.graph_traversal_time_ms}ms&quot;)
+</code></pre>
+<hr />
+<h2 id="message-format">Message Format</h2>
+<p>All <code>chat()</code> methods expect messages in this format:</p>
+<pre><code class="language-python">messages = [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful assistant&quot;},  # Optional
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;},
+    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;Hi there!&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;How are you?&quot;}
+]
+</code></pre>
+<p><strong>Roles:</strong>
+- <code>"system"</code>: System instructions (optional)
+- <code>"user"</code>: User messages
+- <code>"assistant"</code>: Assistant responses</p>
+<hr />
+<h2 id="tool-schema">Tool Schema</h2>
+<p>Memlayer automatically provides these tools to the LLM:</p>
+<h3 id="search_memory"><code>search_memory</code></h3>
+<p><strong>Parameters:</strong>
+- <code>query</code> (string): What to search for
+- <code>search_tier</code> (string): <code>"fast"</code>, <code>"balanced"</code>, or <code>"deep"</code></p>
+<h3 id="schedule_task"><code>schedule_task</code></h3>
+<p><strong>Parameters:</strong>
+- <code>task_description</code> (string): Task description
+- <code>due_date</code> (string): ISO 8601 date string</p>
+<p>The LLM calls these tools automatically when needed - no manual configuration required.</p>
+<hr />
+<h2 id="configuration-classes">Configuration Classes</h2>
+<h3 id="memlayerconfig"><code>MemlayerConfig</code></h3>
+<p>Central configuration object (advanced usage).</p>
+<pre><code class="language-python">from memlayer.config import MemlayerConfig
+
+config = MemlayerConfig(
+    operation_mode=&quot;online&quot;,
+    salience_threshold=0.5,
+    embedding_model=&quot;text-embedding-3-small&quot;
+)
+</code></pre>
+<p><strong>Key Attributes:</strong>
+- <code>operation_mode</code>: <code>str</code>
+- <code>salience_threshold</code>: <code>float</code>
+- <code>embedding_model</code>: <code>str</code>
+- <code>chroma_dir</code>: <code>str</code>
+- <code>networkx_path</code>: <code>str</code>
+- <code>max_search_results</code>: <code>int</code>
+- <code>search_tier</code>: <code>str</code></p>
+<hr />
+<h2 id="error-handling">Error Handling</h2>
+<p>All methods may raise:
+- <code>ConnectionError</code>: API connection issues
+- <code>ValueError</code>: Invalid parameters
+- <code>FileNotFoundError</code>: Storage path issues
+- Provider-specific exceptions (OpenAI, Anthropic, Google errors)</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">try:
+    response = client.chat(messages)
+except ConnectionError as e:
+    print(f&quot;API connection failed: {e}&quot;)
+except ValueError as e:
+    print(f&quot;Invalid parameters: {e}&quot;)
+</code></pre>
+<hr />
+<h2 id="type-hints">Type Hints</h2>
+<pre><code class="language-python">from typing import List, Dict, Generator, Optional, Any
+
+# Message format
+Message = Dict[str, str]  # {&quot;role&quot;: str, &quot;content&quot;: str}
+
+# Chat signatures
+def chat(
+    messages: List[Message],
+    stream: bool = False,
+    **kwargs: Any
+) -&gt; str | Generator[str, None, None]: ...
+
+# Knowledge format
+Knowledge = Dict[str, List[Dict[str, Any]]]  # {&quot;facts&quot;: [...], &quot;entities&quot;: [...], &quot;relationships&quot;: [...]}
+</code></pre>
+<hr />
+<h2 id="quick-reference">Quick Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chat(messages, stream=False)</code></td>
+<td>Send chat message</td>
+<td><code>str</code> or <code>Generator</code></td>
+</tr>
+<tr>
+<td><code>update_from_text(text)</code></td>
+<td>Import knowledge</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>synthesize_answer(question)</code></td>
+<td>Memory-grounded Q&amp;A</td>
+<td><code>str</code> or <code>AnswerObject</code></td>
+</tr>
+<tr>
+<td><code>search_service.search(query)</code></td>
+<td>Search memory</td>
+<td><code>Dict[str, Any]</code></td>
+</tr>
+<tr>
+<td><code>graph_storage.add_task(desc, time)</code></td>
+<td>Schedule task</td>
+<td><code>str</code> (task_id)</td>
+</tr>
+<tr>
+<td><code>analyze_and_extract_knowledge(text)</code></td>
+<td>Extract structured data</td>
+<td><code>Dict[str, List]</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><strong><a href="../basics/overview/">Overview</a></strong>: Architecture and concepts</li>
+<li><strong><a href="../basics/quickstart/">Quickstart</a></strong>: Getting started guide</li>
+<li><strong><a href="../basics/streaming/">Streaming</a></strong>: Streaming mode details</li>
+<li><strong><a href="../examples/README.md">Examples</a></strong>: Working code examples</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
