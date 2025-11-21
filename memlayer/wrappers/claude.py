@@ -805,3 +805,7 @@ JSON array:"""
         except Exception as e:
             print(f"Warning: Error during cleanup: {e}")
 
+
+# Legacy alias for backward compatibility
+ClaudeWrapper = Claude
+

@@ -758,3 +758,6 @@ JSON array:"""
             print(f"Warning: Error during cleanup: {e}")
 
 
+# Legacy alias for backward compatibility
+GeminiWrapper = Gemini
+

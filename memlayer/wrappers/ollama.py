@@ -700,3 +700,7 @@ JSON array:"""
                 self._graph_storage.close()
         except Exception as e:
             print(f"Warning: Error during cleanup: {e}")
+
+
+# Legacy alias for backward compatibility
+OllamaWrapper = Ollama
