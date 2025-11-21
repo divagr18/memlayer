@@ -120,7 +120,7 @@ Memlayer offers three modes that control both **memory filtering (salience)** an
 
 ### 1. LOCAL Mode (Default)
 ```python
-client = OpenAI(salience_mode="local")
+client = Ollama(salience_mode="local")
 ```
 - **Filtering**: Sentence-transformers ML model (high accuracy)
 - **Storage**: ChromaDB (vector) + NetworkX (graph)
@@ -128,7 +128,7 @@ client = OpenAI(salience_mode="local")
 - **Best for**: High-volume production, offline apps
 - **Cost**: Free (no API calls)
 
-### 2. ONLINE Mode
+### 2. ONLINE Mode (Default)
 ```python
 client = OpenAI(salience_mode="online")
 ```
