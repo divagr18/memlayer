@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://divagr18.github.io/memlayer/providers/ollama/">
+        <link rel="canonical" href="https://divagr18.github.io/memlayer/providers/lmstudio/">
       
       
-        <link rel="prev" href="../gemini/">
-      
-      
-        <link rel="next" href="../../services/consolidation/">
       
       
         
@@ -25,7 +21,7 @@
     
     
       
-        <title>Ollama - Memlayer Documentation</title>
+        <title>LM Studio: Local LLM Provider - Memlayer Documentation</title>
       
     
     
@@ -86,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ollama-local-llm-provider" class="md-skip">
+        <a href="#lm-studio-local-llm-provider" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ollama
+              LM Studio: Local LLM Provider
             
           </span>
         </div>
@@ -519,8 +515,6 @@
       
   
   
-    
-  
   
   
     
@@ -547,11 +541,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -579,7 +575,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -680,37 +676,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Ollama
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ollama/" class="md-nav__link">
         
   
   
@@ -726,442 +695,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-install-ollama" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Install Ollama
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-install-memlayer-with-ollama-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Install Memlayer with Ollama Support
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick Start
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#start-ollama-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Start Ollama Server
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pull-a-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pull a Model
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommended-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recommended Models
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Recommended Models">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#for-speed-2s-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For Speed (&lt; 2s response)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#for-quality-standard" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For Quality (Standard)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#for-best-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For Best Performance
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#complete-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Complete Configuration Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operation-modes-with-ollama" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Operation Modes with Ollama
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streaming-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Streaming Support
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#complete-offline-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Complete Offline Setup
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Advanced Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#custom-ollama-host" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Ollama Host
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-context-window" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Context Window
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Temperature
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-embedding-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Embedding Model
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-tuning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Performance Tuning
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Performance Tuning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hardware-recommendations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hardware Recommendations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gpu-acceleration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GPU Acceleration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#model-loading-time" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Loading Time
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#concurrent-requests" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concurrent Requests
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Troubleshooting
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#connection-refused-error" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        "Connection refused" Error
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#slow-first-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Slow First Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#out-of-memory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Out of Memory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#model-download-fails" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Download Fails
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#embeddings-download-fails-local-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Embeddings Download Fails (Local Mode)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#complete-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Complete Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1623,10 +1156,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-install-ollama" class="md-nav__link">
+  <a href="#1-install-lm-studio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Install Ollama
+        1. Install LM Studio
       
     </span>
   </a>
@@ -1634,10 +1167,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-install-memlayer-with-ollama-support" class="md-nav__link">
+  <a href="#2-install-memlayer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Install Memlayer with Ollama Support
+        2. Install Memlayer
       
     </span>
   </a>
@@ -1662,10 +1195,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#start-ollama-server" class="md-nav__link">
+  <a href="#1-prepare-lm-studio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Start Ollama Server
+        1. Prepare LM Studio
       
     </span>
   </a>
@@ -1673,10 +1206,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pull-a-model" class="md-nav__link">
+  <a href="#2-start-the-local-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pull a Model
+        2. Start the Local Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-basic-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Basic Usage
       
     </span>
   </a>
@@ -1762,10 +1306,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#operation-modes-with-ollama" class="md-nav__link">
+  <a href="#operation-modes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation Modes with Ollama
+        Operation Modes
       
     </span>
   </a>
@@ -1789,78 +1333,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#complete-offline-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Complete Offline Setup
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Advanced Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#custom-ollama-host" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Ollama Host
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-context-window" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Context Window
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Temperature
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-embedding-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Embedding Model
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#performance-tuning" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1873,10 +1345,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware-recommendations" class="md-nav__link">
+  <a href="#1-gpu-offloading" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hardware Recommendations
+        1. GPU Offloading
       
     </span>
   </a>
@@ -1884,10 +1356,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gpu-acceleration" class="md-nav__link">
+  <a href="#2-context-window" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GPU Acceleration
+        2. Context Window
       
     </span>
   </a>
@@ -1895,21 +1367,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#model-loading-time" class="md-nav__link">
+  <a href="#3-system-prompt" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Model Loading Time
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#concurrent-requests" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concurrent Requests
+        3. System Prompt
       
     </span>
   </a>
@@ -1934,10 +1395,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#connection-refused-error" class="md-nav__link">
+  <a href="#connection-refused-or-target-machine-actively-refused" class="md-nav__link">
     <span class="md-ellipsis">
       
-        "Connection refused" Error
+        "Connection Refused" or "Target Machine Actively Refused"
       
     </span>
   </a>
@@ -1945,43 +1406,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#slow-first-response" class="md-nav__link">
+  <a href="#error-400-response_format" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slow First Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#out-of-memory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Out of Memory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#model-download-fails" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Download Fails
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#embeddings-download-fails-local-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Embeddings Download Fails (Local Mode)
+        "Error: 400... response_format"
       
     </span>
   </a>
@@ -1998,17 +1426,6 @@
     <span class="md-ellipsis">
       
         Complete Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps
       
     </span>
   </a>
@@ -2032,62 +1449,60 @@
 
 
 
-<h1 id="ollama-local-llm-provider">Ollama: Local LLM Provider</h1>
+<h1 id="lm-studio-local-llm-provider">LM Studio: Local LLM Provider</h1>
 <h2 id="overview">Overview</h2>
-<p>Ollama enables you to run LLMs locally on your machine, providing complete privacy and zero API costs. Memlayer's Ollama wrapper adds persistent memory capabilities to any Ollama-supported model.</p>
+<p>LM Studio is a user-friendly desktop application that allows you to discover, download, and run local LLMs with a graphical interface. It provides a local server that mimics the OpenAI API, making it incredibly easy to integrate with Memlayer.</p>
 <p><strong>Key Benefits:</strong>
-- ✅ Fully offline operation (no internet required)
-- ✅ Complete data privacy (nothing leaves your machine)
-- ✅ Zero API costs
-- ✅ Fast inference on modern hardware
-- ✅ Support for 100+ open-source models</p>
+- ✅ <strong>GUI Interface:</strong> Easy to find and test models (GGUF format)
+- ✅ <strong>Hardware Optimization:</strong> Easy GPU offloading sliders (NVIDIA, AMD, Apple Silicon)
+- ✅ <strong>Privacy:</strong> Completely offline operation
+- ✅ <strong>Compatibility:</strong> Drop-in replacement for OpenAI-based workflows</p>
 <hr />
 <h2 id="installation">Installation</h2>
-<h3 id="1-install-ollama">1. Install Ollama</h3>
-<p><strong>macOS/Linux:</strong></p>
-<pre><code class="language-bash">curl -fsSL https://ollama.com/install.sh | sh
+<h3 id="1-install-lm-studio">1. Install LM Studio</h3>
+<p>Download and install the application for your OS (macOS, Windows, or Linux) from <a href="https://lmstudio.ai">lmstudio.ai</a>.</p>
+<h3 id="2-install-memlayer">2. Install Memlayer</h3>
+<pre><code class="language-bash">pip install memlayer openai
 </code></pre>
-<p><strong>Windows:</strong>
-Download from <a href="https://ollama.com/download">ollama.com/download</a></p>
-<p><strong>Verify installation:</strong></p>
-<pre><code class="language-bash">ollama --version
-</code></pre>
-<h3 id="2-install-memlayer-with-ollama-support">2. Install Memlayer with Ollama Support</h3>
-<pre><code class="language-bash">pip install memlayer ollama
-</code></pre>
+<p><em>(Note: The <code>openai</code> library is required because Memlayer communicates with LM Studio using the OpenAI protocol).</em></p>
 <hr />
 <h2 id="quick-start">Quick Start</h2>
-<h3 id="start-ollama-server">Start Ollama Server</h3>
-<pre><code class="language-bash">ollama serve
-</code></pre>
-<p>Leave this running in a terminal. Default address: <code>http://localhost:11434</code></p>
-<h3 id="pull-a-model">Pull a Model</h3>
-<pre><code class="language-bash">ollama pull qwen3:14b
+<h3 id="1-prepare-lm-studio">1. Prepare LM Studio</h3>
+<ol>
+<li>Open <strong>LM Studio</strong>.</li>
+<li>Click the <strong>Magnifying Glass</strong> (Search) icon.</li>
+<li>Search for a model (e.g., <code>qwen 2.5 7b</code> or <code>llama 3.1 8b</code>).</li>
+<li>Download a quantization level that fits your RAM (e.g., <code>Q4_K_M</code> or <code>Q6_K</code>).</li>
+</ol>
+<h3 id="2-start-the-local-server">2. Start the Local Server</h3>
+<ol>
+<li>Click the <strong>Developer / Local Server</strong> icon (usually <code>&lt; &gt;</code> on the left sidebar).</li>
+<li>Select your downloaded model from the top dropdown to load it into memory.</li>
+<li>Click the green <strong>Start Server</strong> button.</li>
+<li>Note the URL (Default: <code>http://localhost:1234</code>).</li>
+</ol>
+<h3 id="3-basic-usage">3. Basic Usage</h3>
+<pre><code class="language-python">from memlayer.wrappers.lmstudio import LMStudio
 
-### Basic Usage
-
-```python
-from memlayer.wrappers.ollama import Ollama
-
-# Initialize with local model
-client = Ollama(
-    model=&quot;qwen3:14b,
-    host=&quot;http://localhost:11434&quot;,
+# Initialize client pointing to local server
+client = LMStudio(
+    base_url=&quot;http://localhost:1234/v1&quot;,
+    api_key=&quot;lm-studio&quot;,    # Any string works
     user_id=&quot;alice&quot;,
-    operation_mode=&quot;local&quot;  # Use local embeddings too
+    operation_mode=&quot;local&quot;  # Important: Keeps embeddings local too
 )
 
-# Use like any other Memlayer client
+# Chat
 response = client.chat([
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;My name is Alice and I work on Project Phoenix&quot;}
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;My name is Alice and I'm a sci-fi writer.&quot;}
 ])
 print(response)
 
-# Later - it remembers!
+# Memory Recall
 response = client.chat([
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What project do I work on?&quot;}
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What is my profession?&quot;}
 ])
-print(response)  # &quot;You work on Project Phoenix&quot;
+print(response)  # &quot;You are a sci-fi writer.&quot;
 </code></pre>
 <hr />
 <h2 id="recommended-models">Recommended Models</h2>
@@ -2112,277 +1527,115 @@ print(response)  # &quot;You work on Project Phoenix&quot;
 <hr />
 <h2 id="configuration">Configuration</h2>
 <h3 id="complete-configuration-example">Complete Configuration Example</h3>
-<pre><code class="language-python">from memlayer.wrappers.ollama import Ollama
+<pre><code class="language-python">from memlayer import LMStudio
 
-client = Ollama(
-    # Model settings
-    model=&quot;qwen3:14b&quot;,
-    host=&quot;http://localhost:11434&quot;,
+client = LMStudio(
+    # Server Connection
+    base_url=&quot;http://localhost:1234/v1&quot;,
+    api_key=&quot;lm-studio&quot;,
+    model=&quot;local-model&quot;, # Usually ignored by LM Studio, but good for logging
 
-    # Memory settings
+    # Memory &amp; Privacy
     user_id=&quot;alice&quot;,
-    operation_mode=&quot;local&quot;,  # Use local embeddings
+    operation_mode=&quot;local&quot;, # &quot;local&quot;, &quot;online&quot;, or &quot;lightweight&quot;
 
-    # Storage paths
-    chroma_dir=&quot;./chroma_db&quot;,
-    networkx_path=&quot;./knowledge_graph.pkl&quot;,
+    # Storage Paths
+    storage_path=&quot;./memlayer_data&quot;,
 
-    # Performance tuning
-    max_search_results=5,
-    search_tier=&quot;balanced&quot;,
-    salience_threshold=0.5,
-
-    # Ollama-specific
+    # Tuning
     temperature=0.7,
-    num_ctx=4096  # Context window size
 )
 </code></pre>
-<h3 id="operation-modes-with-ollama">Operation Modes with Ollama</h3>
-<p><strong>Local mode (recommended):</strong></p>
-<pre><code class="language-python">client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    operation_mode=&quot;local&quot;  # Local embeddings, fully offline
-)
-# First call: ~5-10s (loads sentence-transformer model)
-# Subsequent calls: fast
+<h3 id="operation-modes">Operation Modes</h3>
+<p><strong>Local Mode (Recommended for LM Studio users):</strong></p>
+<pre><code class="language-python">client = LMStudio(operation_mode=&quot;local&quot;)
 </code></pre>
-<p><strong>Online mode (hybrid):</strong></p>
+<ul>
+<li><strong>LLM:</strong> Local (LM Studio)</li>
+<li><strong>Embeddings:</strong> Local (HuggingFace <code>all-MiniLM-L6-v2</code> running in Python)</li>
+<li><strong>Privacy:</strong> 100% Offline.</li>
+</ul>
+<p><strong>Online Mode:</strong></p>
 <pre><code class="language-python">import os
-os.environ[&quot;OPENAI_API_KEY&quot;] = &quot;your-key&quot;
+os.environ[&quot;OPENAI_API_KEY&quot;] = &quot;sk-...&quot;
 
-client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    operation_mode=&quot;online&quot;  # LLM local, embeddings via OpenAI API
-)
-# Faster startup, but requires internet for embeddings
+client = LMStudio(operation_mode=&quot;online&quot;)
 </code></pre>
-<p><strong>Lightweight mode (fastest startup):</strong></p>
-<pre><code class="language-python">client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    operation_mode=&quot;lightweight&quot;  # No embeddings, graph-only
-)
-# Instant startup, keyword-based search only
-</code></pre>
+<ul>
+<li><strong>LLM:</strong> Local (LM Studio)</li>
+<li><strong>Embeddings:</strong> OpenAI API (<code>text-embedding-3-small</code>)</li>
+<li><strong>Privacy:</strong> Text leaves machine for embedding, but inference is local.</li>
+</ul>
 <hr />
 <h2 id="streaming-support">Streaming Support</h2>
-<p>Ollama fully supports streaming responses:</p>
-<pre><code class="language-python">from memlayer.wrappers.ollama import Ollama
+<p>Memlayer supports streaming with LM Studio just like any other provider.</p>
+<pre><code class="language-python">from memlayer import LMStudio
 
-client = Ollama(model=&quot;qwen3:14b&quot;, operation_mode=&quot;local&quot;)
+client = LMStudio(operation_mode=&quot;local&quot;)
 
-# Stream response chunks
+print(&quot;Assistant: &quot;, end=&quot;&quot;)
 for chunk in client.chat([
-    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Tell me about quantum computing&quot;}
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Write a short poem about memory.&quot;}
 ], stream=True):
     print(chunk, end=&quot;&quot;, flush=True)
-print()  # Newline after completion
-</code></pre>
-<p><strong>Performance:</strong>
-- First chunk: ~1-2s (includes memory search if needed)
-- Chunks: 1-5 characters each (smooth streaming)
-- Knowledge extraction: background, doesn't block stream</p>
-<hr />
-<h2 id="complete-offline-setup">Complete Offline Setup</h2>
-<p>Run Memlayer entirely offline with Ollama:</p>
-<pre><code class="language-python">from memlayer.wrappers.ollama import Ollama
-
-# Fully offline - no internet required
-client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    host=&quot;http://localhost:11434&quot;,
-    operation_mode=&quot;local&quot;,  # Local sentence-transformer for embeddings
-    user_id=&quot;alice&quot;
-)
-
-# Everything runs locally:
-# - LLM inference (Ollama)
-# - Embeddings (sentence-transformers)
-# - Vector search (ChromaDB)
-# - Graph storage (NetworkX)
-</code></pre>
-<p><strong>First-time setup:</strong></p>
-<pre><code class="language-bash"># Pull model (one-time, requires internet)
-ollama pull qwen3:14b
-
-# First Python call downloads embedding model (one-time)
-# Model: all-MiniLM-L6-v2 (~80MB)
-</code></pre>
-<p><strong>After setup:</strong> Completely offline, no internet needed!</p>
-<hr />
-<h2 id="advanced-configuration">Advanced Configuration</h2>
-<h3 id="custom-ollama-host">Custom Ollama Host</h3>
-<pre><code class="language-python"># Remote Ollama server
-client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    host=&quot;http://192.168.1.100:11434&quot;,  # Remote server
-    operation_mode=&quot;local&quot;
-)
-</code></pre>
-<h3 id="custom-context-window">Custom Context Window</h3>
-<pre><code class="language-python">client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    num_ctx=8192,  # Increase context window (if model supports it)
-)
-</code></pre>
-<h3 id="custom-temperature">Custom Temperature</h3>
-<pre><code class="language-python">client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    temperature=0.3,  # Lower = more focused, higher = more creative
-)
-</code></pre>
-<h3 id="custom-embedding-model">Custom Embedding Model</h3>
-<pre><code class="language-python">client = Ollama(
-    model=&quot;qwen3:14b&quot;,
-    operation_mode=&quot;local&quot;,
-    embedding_model=&quot;all-mpnet-base-v2&quot;  # Better quality, slower
-)
 </code></pre>
 <hr />
 <h2 id="performance-tuning">Performance Tuning</h2>
-<h3 id="hardware-recommendations">Hardware Recommendations</h3>
-<table>
-<thead>
-<tr>
-<th>Model Size</th>
-<th>RAM</th>
-<th>GPU VRAM</th>
-<th>Response Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3B (llama3.2)</td>
-<td>8GB</td>
-<td>Optional</td>
-<td>1-2s</td>
-</tr>
-<tr>
-<td>7B (mistral)</td>
-<td>16GB</td>
-<td>Optional</td>
-<td>2-5s</td>
-</tr>
-<tr>
-<td>8B (llama3.1)</td>
-<td>16GB</td>
-<td>8GB+</td>
-<td>2-5s</td>
-</tr>
-<tr>
-<td>70B (llama3.1:70b)</td>
-<td>40GB+</td>
-<td>24GB+</td>
-<td>5-15s</td>
-</tr>
-</tbody>
-</table>
-<h3 id="gpu-acceleration">GPU Acceleration</h3>
-<p>Ollama automatically uses GPU if available (NVIDIA, AMD, Apple Silicon):</p>
-<pre><code class="language-bash"># Verify GPU usage
-ollama run llama3.2
-
-# In another terminal:
-nvidia-smi  # For NVIDIA GPUs
-# or
-rocm-smi   # For AMD GPUs
-</code></pre>
-<h3 id="model-loading-time">Model Loading Time</h3>
-<p>First inference loads model to memory (~2-5s). Keep Ollama running to avoid reload:</p>
-<pre><code class="language-bash"># Keep model loaded
-ollama run llama3.2
-
-# In another terminal/notebook, use Memlayer
-# Model is already in memory, responses are instant
-</code></pre>
-<h3 id="concurrent-requests">Concurrent Requests</h3>
-<p>Ollama handles concurrent requests efficiently:</p>
-<pre><code class="language-python">import concurrent.futures
-
-clients = [Ollama(model=&quot;llama3.2&quot;, user_id=f&quot;user{i}&quot;) 
-           for i in range(5)]
-
-with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-    futures = [
-        executor.submit(c.chat, [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: f&quot;Hello {i}&quot;}])
-        for i, c in enumerate(clients)
-    ]
-    responses = [f.result() for f in futures]
-</code></pre>
+<h3 id="1-gpu-offloading">1. GPU Offloading</h3>
+<p>In the LM Studio <strong>Local Server</strong> tab (right sidebar), look for <strong>"GPU Offload"</strong>.
+*   <strong>Max:</strong> Slide to the right to put as many layers as possible on your GPU.
+*   <strong>Impact:</strong> Drastically improves speed.</p>
+<h3 id="2-context-window">2. Context Window</h3>
+<p>In the LM Studio sidebar, check <strong>Context Length</strong>.
+*   Ensure it is at least <code>2048</code> or <code>4096</code>.
+*   If Memlayer memories grow large, you may need <code>8192</code> (if your model supports it).</p>
+<h3 id="3-system-prompt">3. System Prompt</h3>
+<p>In LM Studio settings:
+*   <strong>System Prompt:</strong> Ensure this is enabled.
+*   Memlayer injects instructions about "Using Tools" into the system prompt. If the model behaves unexpectedly, ensure LM Studio isn't overriding the system prompt sent by the client.</p>
 <hr />
 <h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="connection-refused-error">"Connection refused" Error</h3>
-<p><strong>Problem:</strong> Ollama server not running</p>
-<p><strong>Solution:</strong></p>
-<pre><code class="language-bash">ollama serve
-</code></pre>
-<h3 id="slow-first-response">Slow First Response</h3>
-<p><strong>Problem:</strong> Model loading into memory</p>
-<p><strong>Solution:</strong> Keep Ollama server running with model loaded:</p>
-<pre><code class="language-bash">ollama run llama3.2
-# Keep this terminal open
-</code></pre>
-<h3 id="out-of-memory">Out of Memory</h3>
-<p><strong>Problem:</strong> Model too large for your hardware</p>
-<p><strong>Solution:</strong> Use smaller model:</p>
-<pre><code class="language-bash">ollama pull llama3.2  # 3B model, needs only 8GB RAM
-</code></pre>
-<h3 id="model-download-fails">Model Download Fails</h3>
-<p><strong>Problem:</strong> Network issues during pull</p>
-<p><strong>Solution:</strong> Retry with resume:</p>
-<pre><code class="language-bash">ollama pull llama3.2  # Automatically resumes
-</code></pre>
-<h3 id="embeddings-download-fails-local-mode">Embeddings Download Fails (Local Mode)</h3>
-<p><strong>Problem:</strong> First-time sentence-transformer download fails</p>
-<p><strong>Solution:</strong> Manually download:</p>
-<pre><code class="language-python">from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('all-MiniLM-L6-v2')
-# Now Memlayer will find cached model
-</code></pre>
+<h3 id="connection-refused-or-target-machine-actively-refused">"Connection Refused" or "Target Machine Actively Refused"</h3>
+<p><strong>Cause:</strong> The LM Studio server is not running.
+<strong>Solution:</strong> Go to the "Local Server" tab in LM Studio and click the green <strong>Start Server</strong> button.</p>
+<h3 id="error-400-response_format">"Error: 400... response_format"</h3>
+<p><strong>Cause:</strong> Older versions of LM Studio or specific model loaders may not support the <code>json_object</code> enforcement used by OpenAI.
+<strong>Solution:</strong> Memlayer's <code>LMStudio</code> wrapper handles this automatically by stripping strict JSON flags. Ensure you are using the latest version of Memlayer.</p>
 <hr />
 <h2 id="complete-example">Complete Example</h2>
-<pre><code class="language-python">from memlayer.wrappers.ollama import Ollama
+<pre><code class="language-python">from memlayer import LMStudio
 import time
 
-# Initialize fully offline client
-client = Ollama(
-    model=&quot;qwen3:14b,
-    host=&quot;http://localhost:11434&quot;,
-    operation_mode=&quot;local&quot;,
-    user_id=&quot;alice&quot;
+# 1. Setup Client
+client = LMStudio(
+    base_url=&quot;http://localhost:1234/v1&quot;,
+    model=&quot;qwen3-14b&quot;,
+    user_id=&quot;alice_local&quot;
 )
 
-def chat(message):
-    &quot;&quot;&quot;Send a message and stream the response.&quot;&quot;&quot;
-    print(f&quot;\n🤖 Assistant: &quot;, end=&quot;&quot;, flush=True)
-    start = time.time()
+def chat_with_memory(text):
+    print(f&quot;\n👤 User: {text}&quot;)
+    print(f&quot;🤖 AI: &quot;, end=&quot;&quot;, flush=True)
 
-    for chunk in client.chat([
-        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: message}
-    ], stream=True):
+    # Stream response
+    full_response = &quot;&quot;
+    for chunk in client.chat([{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: text}], stream=True):
         print(chunk, end=&quot;&quot;, flush=True)
+        full_response += chunk
+    print()
 
-    elapsed = time.time() - start
-    print(f&quot;\n⏱️  Response time: {elapsed:.2f}s\n&quot;)
+# 2. Teach
+chat_with_memory(&quot;My favorite food is sushi and I live in Tokyo.&quot;)
 
-# Example conversation
-print(&quot;👤 User: My name is Alice and I love hiking&quot;)
-chat(&quot;My name is Alice and I love hiking&quot;)
+# 3. Wait for Background Processing
+print(&quot;\n[System] Consolidating memories (wait 5s)...&quot;)
+time.sleep(5)
 
-print(&quot;👤 User: What do I like to do?&quot;)
-chat(&quot;What do I like to do?&quot;)
-
-print(&quot;👤 User: Plan a weekend activity for me&quot;)
-chat(&quot;Plan a weekend activity for me&quot;)
+# 4. Recall (New Session)
+# We reset the message history here to prove it's fetching from DB, not context window
+client.chat_history = [] 
+chat_with_memory(&quot;Where do I live and what should I eat for dinner?&quot;)
 </code></pre>
-<hr />
-<h2 id="next-steps">Next Steps</h2>
-<ul>
-<li><strong><a href="../../basics/quickstart/">Basics Quickstart</a></strong>: General getting started guide</li>
-<li><strong><a href="../../basics/streaming/">Streaming Mode</a></strong>: Learn about streaming responses</li>
-<li><strong><a href="../../tuning/operation_mode/">Operation Modes</a></strong>: Deep dive into local vs online modes</li>
-<li><strong><a href="../../examples/05_providers/ollama_example.py">Examples</a></strong>: Complete working code</li>
-<li><strong><a href="https://github.com/ollama/ollama">Ollama Docs</a></strong>: Official Ollama documentation</li>
-</ul>
 
 
 

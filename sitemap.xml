@@ -2,74 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://divagr18.github.io/memlayer/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/API_REFERENCE/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/basics/operation_modes/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/basics/overview/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/basics/quickstart/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/basics/streaming/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/providers/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/providers/claude/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/providers/gemini/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://divagr18.github.io/memlayer/providers/lmstudio/</loc>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/providers/ollama/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/providers/openai/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/services/consolidation/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/services/curation/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/storage/chroma/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/storage/networkx/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/tuning/intervals/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/tuning/operation_mode/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
     <url>
          <loc>https://divagr18.github.io/memlayer/tuning/salience_threshold/</loc>
-         <lastmod>2025-11-17</lastmod>
+         <lastmod>2025-11-22</lastmod>
     </url>
 </urlset>
