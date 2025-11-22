@@ -538,6 +538,8 @@
       
         
       
+        
+      
     
     
     
@@ -691,6 +693,34 @@
     
   
     Ollama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lmstudio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LMStudio
   
 
     
@@ -1192,6 +1222,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lmstudio-local-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LMStudio (Local Models)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1350,6 +1391,13 @@
 <li><strong>Best for</strong>: Privacy, offline use, zero API costs</li>
 <li><strong>Setup</strong>: Requires local Ollama server (<code>ollama serve</code>)</li>
 </ul>
+<h3 id="lmstudio-local-models"><a href="lmstudio/">LMStudio (Local Models)</a></h3>
+<ul>
+<li><strong>Models</strong>: Llama 4, Qwen 3, 100+ more</li>
+<li><strong>Streaming</strong>: ✅ Full support</li>
+<li><strong>Best for</strong>: Privacy, offline use, zero API costs</li>
+<li><strong>Setup</strong>: Requires local LMStudio server</li>
+</ul>
 <h2 id="quick-comparison">Quick Comparison</h2>
 <table>
 <thead>
@@ -1390,15 +1438,22 @@
 <td>Local</td>
 <td>✅</td>
 </tr>
+<tr>
+<td>LMStudio</td>
+<td>Free</td>
+<td>Medium</td>
+<td>Local</td>
+<td>✅</td>
+</tr>
 </tbody>
 </table>
 <h2 id="configuration-basics">Configuration Basics</h2>
 <p>All providers share the same Memlayer API:</p>
-<pre><code class="language-python">from memlayer.wrappers.openai import OpenAI
-from memlayer.wrappers.claude import Claude
-from memlayer.wrappers.gemini import Gemini
-from memlayer.wrappers.ollama import Ollama
-
+<pre><code class="language-python">from memlayer import OpenAI
+from memlayer import Claude
+from memlayer import Gemini
+from memlayer import Ollama
+from memlayer import LMStudio
 # OpenAI
 client = OpenAI(
     api_key=&quot;your-key&quot;,
@@ -1424,6 +1479,13 @@ client = Gemini(
 client = Ollama(
     model=&quot;llama3.2&quot;,
     host=&quot;http://localhost:11434&quot;,
+    user_id=&quot;alice&quot;,
+    operation_mode=&quot;local&quot;  # Fully offline
+)
+
+client = LMStudio(
+    model=&quot;llama3.2&quot;,
+    host=&quot;http://localhost:1234/v1&quot;,
     user_id=&quot;alice&quot;,
     operation_mode=&quot;local&quot;  # Fully offline
 )
@@ -1455,6 +1517,7 @@ client = Ollama(
 <li><strong><a href="claude/">claude.md</a></strong> — Anthropic Claude setup and features</li>
 <li><strong><a href="gemini/">gemini.md</a></strong> — Google Gemini configuration</li>
 <li><strong><a href="ollama/">ollama.md</a></strong> — <strong>🆕 Complete guide to local models</strong>: installation, model recommendations, fully offline setup</li>
+<li><strong><a href="lmstudio/">lmstudio.md</a></strong> — <strong>🆕 Complete guide to LMStudio local models</strong>: installation, model recommendations, fully offline setup</li>
 </ul>
 <h2 id="getting-started">Getting Started</h2>
 <ol>
