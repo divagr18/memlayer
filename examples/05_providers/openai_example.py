@@ -93,8 +93,8 @@ if client.last_trace:
 
 print("\n✅ Example complete!")
 print("\n💡 Tips:")
-print("  - Use salience_mode='online' for faster startup in production")
-print("  - Use salience_mode='lightweight' for prototyping")
+print("  - Use operation_mode='online' for faster startup in production")
+print("  - Use operation_mode='lightweight' for prototyping")
 print("  - Adjust salience_threshold to control memory filtering")
 print("  - Check client.last_trace for performance insights")
 

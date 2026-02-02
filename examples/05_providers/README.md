@@ -79,7 +79,7 @@ client = Provider(
     model="model-name",
     storage_path="./memories",
     user_id="user_id",
-    salience_mode="local"  # or "online" or "lightweight"
+    operation_mode="local"  # or "online" or "lightweight"
 )
 
 # Chat with automatic memory
@@ -115,7 +115,7 @@ Example:
 ```python
 client = Provider(
     model="...",
-    salience_mode="online",  # Fast startup!
+    operation_mode="online",  # Fast startup!
     storage_path="./memories"
 )
 ```
@@ -124,7 +124,7 @@ client = Provider(
 
 1. **Mix and match**: Use different providers for different tasks
 2. **Ollama for dev**: Use Ollama locally, then switch to cloud provider for production
-3. **Online mode for serverless**: Use `salience_mode="online"` in AWS Lambda/Cloud Functions
+3. **Online mode for serverless**: Use `operation_mode="online"` in AWS Lambda/Cloud Functions
 4. **Share memories**: All providers can read the same memory storage if using same `storage_path`
 
 ## 📚 More Examples

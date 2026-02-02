@@ -31,7 +31,7 @@ def test_mode(mode: str, storage_path: str):
     client = OpenAI(
         storage_path=storage_path,
         user_id=f"test_user_{mode}",
-        salience_mode=mode
+        operation_mode=mode
     )
     init_time = time.time() - init_start
     print(f"   Client init: {init_time:.3f}s")

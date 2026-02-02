@@ -119,7 +119,7 @@ Memlayer offers three modes that control both **memory filtering (salience)** an
 
 ### 1. LOCAL Mode (Default)
 ```python
-client = Ollama(salience_mode="local")
+client = Ollama(operation_mode="local")
 ```
 - **Filtering**: Sentence-transformers ML model (high accuracy)
 - **Storage**: ChromaDB (vector) + NetworkX (graph)
@@ -129,7 +129,7 @@ client = Ollama(salience_mode="local")
 
 ### 2. ONLINE Mode (Default)
 ```python
-client = OpenAI(salience_mode="online")
+client = OpenAI(operation_mode="online")
 ```
 - **Filtering**: OpenAI embeddings API (high accuracy)
 - **Storage**: ChromaDB (vector) + NetworkX (graph)
@@ -139,7 +139,7 @@ client = OpenAI(salience_mode="online")
 
 ### 3. LIGHTWEIGHT Mode
 ```python
-client = OpenAI(salience_mode="lightweight")
+client = OpenAI(operation_mode="lightweight")
 ```
 - **Filtering**: Keyword-based (medium accuracy)
 - **Storage**: NetworkX only (no vector storage!)
@@ -236,7 +236,7 @@ client = Ollama(
     model="qwen3:14b",  # or llama3.2, mistral, etc.
     storage_path="./memories",
     user_id="user_123",
-    salience_mode="local"  # Run 100% offline!
+    operation_mode="local"  # Run 100% offline!
 )
 ```
 ### LMStudio (Local)
@@ -340,7 +340,7 @@ python examples/03_features/test_knowledge_graph.py
 ### Benchmarks
 ```bash
 # Compare salience modes
-python examples/04_benchmarks/compare_salience_modes.py
+python examples/04_benchmarks/compare_operation_modes.py
 ```
 
 ### Providers

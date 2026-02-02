@@ -16,7 +16,7 @@ from memlayer.wrappers.openai import OpenAI
 client = OpenAI(
     storage_path="./memories",
     user_id="user123",
-    salience_mode="local"  # Default
+    operation_mode="local"  # Default
 )
 ```
 
@@ -48,7 +48,7 @@ import os
 client = OpenAI(
     storage_path="./memories",
     user_id="user123",
-    salience_mode="online",
+    operation_mode="online",
     api_key=os.getenv("OPENAI_API_KEY")  # Required
 )
 ```
@@ -84,7 +84,7 @@ Uses keyword matching for salience and **graph-only storage** (no embeddings at 
 client = OpenAI(
     storage_path="./memories",
     user_id="user123",
-    salience_mode="lightweight"
+    operation_mode="lightweight"
 )
 ```
 
@@ -152,7 +152,7 @@ client = OpenAI(
 Run the comparison script to see performance on your hardware:
 
 ```bash
-python examples/compare_salience_modes.py
+python examples/compare_operation_modes.py
 ```
 
 Example output:
@@ -173,13 +173,13 @@ LOCAL             11.234s         2.189s          13.423s
 ```python
 # Strict LIGHTWEIGHT (only obvious facts)
 client = OpenAI(
-    salience_mode="lightweight",
+    operation_mode="lightweight",
     salience_threshold=0.2  # Higher = stricter
 )
 
 # Permissive ONLINE (save most content)
 client = OpenAI(
-    salience_mode="online",
+    operation_mode="online",
     salience_threshold=-0.05  # Lower = more permissive
 )
 ```
@@ -222,11 +222,11 @@ All three modes share the same two-stage filtering:
 
 ```python
 # Before
-client = OpenAI(salience_mode="local")
+client = OpenAI(operation_mode="local")
 
 # After
 client = OpenAI(
-    salience_mode="online",
+    operation_mode="online",
     api_key=os.getenv("OPENAI_API_KEY")
 )
 ```
@@ -238,10 +238,10 @@ client = OpenAI(
 
 ```python
 # Before
-client = OpenAI(salience_mode="local")
+client = OpenAI(operation_mode="local")
 
 # After
-client = OpenAI(salience_mode="lightweight")
+client = OpenAI(operation_mode="lightweight")
 ```
 
 **Benefit:** 11s faster startup, no dependencies
@@ -270,6 +270,6 @@ A: ~80-90% of LOCAL/ONLINE accuracy on typical conversations. Lower on nuanced c
 
 ## Next Steps
 
-- Try all three modes with `examples/compare_salience_modes.py`
+- Try all three modes with `examples/compare_operation_modes.py`
 - Read the [Performance Guide](PERFORMANCE.md) for optimization tips
 - Check [Examples](../examples/) for usage patterns

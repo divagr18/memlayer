@@ -128,9 +128,9 @@ python examples/03_features/test_knowledge_graph.py
 ### 📊 Benchmarks (04_benchmarks/)
 Performance comparisons and measurements.
 
-**`compare_salience_modes.py`** - Compare memory filtering modes
+**`compare_operation_modes.py`** - Compare memory filtering modes
 ```bash
-python examples/04_benchmarks/compare_salience_modes.py
+python examples/04_benchmarks/compare_operation_modes.py
 ```
 Compares three salience (memory filtering) modes:
 - **LOCAL**: Sentence-transformers (slow startup, high accuracy)
@@ -224,7 +224,7 @@ for chunk in stream:
 
 ### "I need fast responses (<100ms)"
 → Use `02_search_tiers/fast_tier_example.py`
-→ Set `salience_mode="online"` for fastest startup
+→ Set `operation_mode="online"` for fastest startup
 
 ### "I want to find relationships between entities"
 → Use `02_search_tiers/deep_tier_example.py`
@@ -236,11 +236,11 @@ for chunk in stream:
 
 ### "I want to run entirely offline"
 → Use `05_providers/ollama_example.py`
-→ Set `salience_mode="local"` (no API calls)
+→ Set `operation_mode="local"` (no API calls)
 
 ### "I need instant cold starts (serverless)"
-→ Use any provider with `salience_mode="online"`
-→ Or use `salience_mode="lightweight"` for graph-only
+→ Use any provider with `operation_mode="online"`
+→ Or use `operation_mode="lightweight"` for graph-only
 ```python
 from memlayer.wrappers.openai import OpenAI
 
