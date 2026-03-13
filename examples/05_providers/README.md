@@ -20,6 +20,13 @@ python examples/05_providers/claude_example.py
 ```
 **Models**: claude-4-5-sonnet, claude-4-5-haiku, claude-4-opus
 
+### Novita.ai (OpenAI-compatible)
+```bash
+export NOVITA_API_KEY='your-api-key-here'
+python examples/05_providers/novita_example.py
+```
+**Models**: deepseek/deepseek-v3.2, zai-org/glm-5, minimax/minimax-m2.5
+
 ### Google Gemini
 ```bash
 export GOOGLE_API_KEY='...'
@@ -41,6 +48,7 @@ python examples/05_providers/ollama_example.py
 ```bash
 export OPENAI_API_KEY='your-key-here'
 export ANTHROPIC_API_KEY='your-key-here'
+export NOVITA_API_KEY='your-key-here'
 export GOOGLE_API_KEY='your-key-here'
 ```
 
@@ -48,6 +56,7 @@ export GOOGLE_API_KEY='your-key-here'
 ```powershell
 $env:OPENAI_API_KEY='your-key-here'
 $env:ANTHROPIC_API_KEY='your-key-here'
+$env:NOVITA_API_KEY='your-key-here'
 $env:GOOGLE_API_KEY='your-key-here'
 ```
 
@@ -55,6 +64,7 @@ $env:GOOGLE_API_KEY='your-key-here'
 ```cmd
 set OPENAI_API_KEY=your-key-here
 set ANTHROPIC_API_KEY=your-key-here
+set NOVITA_API_KEY=your-key-here
 set GOOGLE_API_KEY=your-key-here
 ```
 
@@ -64,6 +74,7 @@ set GOOGLE_API_KEY=your-key-here
 |----------|----------|------|-------|---------|
 | **OpenAI** | General purpose, production apps | $$$ | Fast | Excellent |
 | **Claude** | Long context, detailed analysis | $$$ | Medium | Excellent |
+| **Novita** | Multiple open-source models, great pricing | $ | Fast | Good-Excellent |
 | **Gemini** | Multimodal, fast prototyping | $$ | Very Fast | Good |
 | **Ollama** | Privacy, offline, no cost | FREE | Variable | Good |
 
